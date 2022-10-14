@@ -1,7 +1,7 @@
 
 import { identity } from "rxjs";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-@Entity()
+@Entity('tb_categoria')
 export class Categoria {
 @PrimaryGeneratedColumn()
 id_ct2: number;

@@ -33,10 +33,10 @@ export class CategoriaService {
   }
 
   findOne(id_ct2: number) {
-    { const index = this.produtos.findIndex((categoria)=> categoria.id_ct2===id_ct2)
+     const index = this.produtos.findIndex((categoria)=> categoria.id_ct2===id_ct2)
       return this.produtos[index]
      // return `This action returns a #${id} user`;
-    }
+    
   
   }
 
@@ -44,7 +44,7 @@ export class CategoriaService {
     const produtos= this.findOne(id_ct2)
     const newCategoria ={
       ...produtos ,
-      ... UpdateCategoriaDto,
+      ... updateCategoriaDto,
     }
       const index = this.produtos.findIndex((categoria) => categoria.id_ct2 === id_ct2)
       this.produtos[index] = newCategoria
